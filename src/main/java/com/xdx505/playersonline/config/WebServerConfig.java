@@ -12,14 +12,14 @@ public class WebServerConfig {
 
         hostname = server
                 .comment("hostname")
-                .define("host", "127.0.0.1");
+                .define("host", "127.0.0.5");
 
         port = server
                 .comment("port")
-                .define("port", 8082);
+                .define("port", 8005);
 
         path = server
-                .comment("path (optional)")
-                .define("path", "/path");
+                .comment("path")
+                .define("path", "/test/");
     }
 }

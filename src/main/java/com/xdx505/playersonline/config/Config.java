@@ -13,7 +13,6 @@ public class Config {
 
     static {
         WebServerConfig.init(server_builder);
-
         server_config = server_builder.build();
     }
 
