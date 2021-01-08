@@ -50,8 +50,12 @@ public class Server implements HttpHandler {
         Headers headers = httpExchange.getRequestHeaders();
         httpExchange.sendResponseHeaders(200, answer.length);
 
-        OutputStream os = httpExchange.getResponseBody();
-        os.write(answer);
-        os.close();
+        try {
+            OutputStream os = httpExchange.getResponseBody();
+            os.write(answer);
+            os.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }
