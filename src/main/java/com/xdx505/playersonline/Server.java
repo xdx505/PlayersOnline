@@ -37,14 +37,6 @@ public class Server implements HttpHandler {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
-        /*try {
-            HttpServer server = HttpServer.create(new InetSocketAddress("127.0.0.55", 8008), 0);
-            server.createContext("/path", this);
-            server.start();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }*/
     }
 
     @Override
