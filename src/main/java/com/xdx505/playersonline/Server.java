@@ -41,8 +41,10 @@ public class Server implements HttpHandler {
         if (is == null) {
             return;
         }
+
+        final List<ServerPlayerEntity> list = is.getPlayerList().getPlayers();
         final List<String> playersList = new ArrayList<>();
-        for (ServerPlayerEntity player : is.getPlayerList().getPlayers()) {
+        for (ServerPlayerEntity player : list) {
             playersList.add(player.getName().getString());
         }
         final byte[] answer = gson.toJson(playersList).getBytes(UTF_8);
