@@ -5,6 +5,7 @@ import com.sun.net.httpserver.Headers;
 import com.sun.net.httpserver.HttpExchange;
 import com.sun.net.httpserver.HttpHandler;
 import com.sun.net.httpserver.HttpServer;
+import com.xdx505.playersonline.config.WebServerConfig;
 import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.server.MinecraftServer;
 import net.minecraftforge.fml.server.ServerLifecycleHooks;
@@ -25,13 +26,25 @@ public class Server implements HttpHandler {
             return;
         }
 
+        final String hostname = WebServerConfig.hostname.get();
+        final int port = WebServerConfig.port.get();
+        final String path = WebServerConfig.path.get();
+
         try {
-            HttpServer server = HttpServer.create(new InetSocketAddress("localhost", 8001), 0);
-            server.createContext("/test/", this);
+            HttpServer server = HttpServer.create(new InetSocketAddress(hostname, port), 0);
+            server.createContext(path, this);
             server.start();
         } catch (IOException e) {
             e.printStackTrace();
         }
+
+        /*try {
+            HttpServer server = HttpServer.create(new InetSocketAddress("127.0.0.55", 8008), 0);
+            server.createContext("/path", this);
+            server.start();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }*/
     }
 
     @Override
