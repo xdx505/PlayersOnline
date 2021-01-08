@@ -5,7 +5,9 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.server.FMLServerStartingEvent;
 
-@Mod("playersonline")
+
+
+@Mod(value = "playersonline")
 public class PlayersOnline {
 
     public PlayersOnline() {
