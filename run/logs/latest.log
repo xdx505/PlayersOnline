@@ -1,0 +1,81 @@
+[08янв2021 23:06:33.282] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--gameDir, ., --launchTarget, fmluserdevserver, --fml.mcpVersion, 20200911.084530, --fml.mcVersion, 1.16.3, --fml.forgeGroup, net.minecraftforge, --fml.forgeVersion, 34.1.0]
+[08янв2021 23:06:33.286] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 7.0.1+78+master.e9771d8 starting: java version 1.8.0_271 by Oracle Corporation
+[08янв2021 23:06:33.938] [main/INFO] [net.minecraftforge.fml.loading.FixSSL/CORE]: Added Lets Encrypt root certificates as additional trust
+[08янв2021 23:06:33.991] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.1 Source=file:/C:/Users/Dan/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.1/3099ac85bce29d37a22d3561073d01eb99b0cf4b/mixin-0.8.1.jar Service=ModLauncher Env=SERVER
+[08янв2021 23:06:35.446] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'fmluserdevserver' with arguments [--gameDir, .]
+[08янв2021 23:06:43.978] [modloading-worker-1/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 34.1.0, for MC 1.16.3 with MCP 20200911.084530
+[08янв2021 23:06:43.978] [modloading-worker-1/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v34.1.0 Initialized
+[08янв2021 23:06:44.008] [modloading-worker-3/INFO] [com.xdx505.playersonline.PlayersOnline/]: Loading config:world\serverconfig\playersonline-server.toml
+[08янв2021 23:06:44.008] [modloading-worker-3/INFO] [com.xdx505.playersonline.PlayersOnline/]: Build config: world\serverconfig\playersonline-server.toml
+[08янв2021 23:06:44.010] [modloading-worker-3/INFO] [com.xdx505.playersonline.PlayersOnline/]: Loaded config:world\serverconfig\playersonline-server.toml
+[08янв2021 23:06:44.011] [modloading-worker-3/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Configuration file world\serverconfig\playersonline-server.toml is not correct. Correcting
+[08янв2021 23:06:44.012] [modloading-worker-3/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key host was corrected from null to 127.0.0.5
+[08янв2021 23:06:44.012] [modloading-worker-3/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key port was corrected from null to 8005
+[08янв2021 23:06:44.013] [modloading-worker-3/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key path was corrected from null to /test/
+[08янв2021 23:06:44.565] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Starting version check at https://files.minecraftforge.net/maven/net/minecraftforge/forge/promotions_slim.json
+[08янв2021 23:06:45.527] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Found status: UP_TO_DATE Current: 34.1.0 Target: null
+[08янв2021 23:06:45.527] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [playersonline] Starting version check at https://github.com/xdx505
+[08янв2021 23:06:46.530] [Forge Version Check/WARN] [net.minecraftforge.fml.VersionChecker/]: Failed to process update information
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 3 column 1 path $
+	at com.google.gson.Gson.fromJson(Gson.java:899) ~[gson-2.8.0.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:852) ~[gson-2.8.0.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:801) ~[gson-2.8.0.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:773) ~[gson-2.8.0.jar:?]
+	at net.minecraftforge.fml.VersionChecker$1.process(VersionChecker.java:195) ~[?:?]
+	at java.lang.Iterable.forEach(Iterable.java:75) [?:1.8.0_271]
+	at net.minecraftforge.fml.VersionChecker$1.run(VersionChecker.java:139) [?:?]
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 3 column 1 path $
+	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:385) ~[gson-2.8.0.jar:?]
+	at com.google.gson.internal.bind.MapTypeAdapterFactory$Adapter.read(MapTypeAdapterFactory.java:183) ~[gson-2.8.0.jar:?]
+	at com.google.gson.internal.bind.MapTypeAdapterFactory$Adapter.read(MapTypeAdapterFactory.java:145) ~[gson-2.8.0.jar:?]
+	at com.google.gson.Gson.fromJson(Gson.java:887) ~[gson-2.8.0.jar:?]
+	... 6 more
+[08янв2021 23:06:47.011] [main/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', name='PROD'
+[08янв2021 23:06:47.822] [main/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[08янв2021 23:06:47.823] [main/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[08янв2021 23:06:47.824] [main/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[08янв2021 23:06:47.825] [main/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[08янв2021 23:06:47.826] [main/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[08янв2021 23:06:47.830] [main/INFO] [net.minecraft.resources.SimpleReloadableResourceManager/]: Reloading ResourceManager: Default, forge-1.16.3-34.1.0_mapped_snapshot_20200514-1.16-recomp.jar, resources
+[08янв2021 23:06:49.435] [Worker-Main-4/INFO] [net.minecraft.item.crafting.RecipeManager/]: Loaded 7 recipes
+[08янв2021 23:06:50.535] [Worker-Main-4/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 927 advancements
+[08янв2021 23:06:51.168] [main/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: Injecting existing registry data into this CLIENT instance
+[08янв2021 23:06:52.498] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Starting minecraft server version 1.16.3
+[08янв2021 23:06:52.499] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Loading properties
+[08янв2021 23:06:52.499] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Default game type: SURVIVAL
+[08янв2021 23:06:52.499] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Generating keypair
+[08янв2021 23:06:52.692] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Starting Minecraft server on *:25565
+[08янв2021 23:06:52.698] [Server thread/INFO] [net.minecraft.network.NetworkSystem/]: Using default channel type
+[08янв2021 23:06:53.380] [Server thread/WARN] [net.minecraft.server.dedicated.DedicatedServer/]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[08янв2021 23:06:53.380] [Server thread/WARN] [net.minecraft.server.dedicated.DedicatedServer/]: The server will make no attempt to authenticate usernames. Beware.
+[08янв2021 23:06:53.380] [Server thread/WARN] [net.minecraft.server.dedicated.DedicatedServer/]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[08янв2021 23:06:53.380] [Server thread/WARN] [net.minecraft.server.dedicated.DedicatedServer/]: To change this, set "online-mode" to "true" in the server.properties file.
+[08янв2021 23:06:53.503] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Preparing level "world"
+[08янв2021 23:06:53.743] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
+[08янв2021 23:06:54.802] [Server thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
+[08янв2021 23:06:54.802] [Server thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
+[08янв2021 23:06:54.803] [Server thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
+[08янв2021 23:06:55.257] [Worker-Main-6/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
+[08янв2021 23:06:55.769] [Worker-Main-5/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 83%
+[08янв2021 23:06:56.253] [Worker-Main-6/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 83%
+[08янв2021 23:06:56.754] [Worker-Main-5/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 83%
+[08янв2021 23:06:57.252] [Worker-Main-7/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 83%
+[08янв2021 23:06:57.814] [Worker-Main-6/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 83%
+[08янв2021 23:06:58.287] [Worker-Main-7/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 84%
+[08янв2021 23:06:58.768] [Worker-Main-6/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 88%
+[08янв2021 23:06:59.267] [Worker-Main-7/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 94%
+[08янв2021 23:06:59.607] [Server thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Time elapsed: 5857 ms
+[08янв2021 23:06:59.615] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Done (6.196s)! For help, type "help"
+[08янв2021 23:06:59.638] [Server thread/INFO] [com.xdx505.playersonline.PlayersOnline/]: HELLO from server starting
+[08янв2021 23:07:06.646] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
+[08янв2021 23:07:06.647] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
+[08янв2021 23:07:06.648] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
+[08янв2021 23:07:06.648] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[08янв2021 23:07:07.812] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[08янв2021 23:07:07.813] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
+[08янв2021 23:07:07.814] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[08янв2021 23:07:07.814] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
+[08янв2021 23:07:07.815] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[08янв2021 23:07:07.862] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[08янв2021 23:07:07.879] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[08янв2021 23:07:07.879] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
