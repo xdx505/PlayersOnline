@@ -18,13 +18,15 @@ import java.util.List;
 import static java.nio.charset.StandardCharsets.UTF_8;
 
 public class Server implements HttpHandler {
+    private final Gson gson = new Gson();
+
     public void init() {
-        if(ServerLifecycleHooks.getCurrentServer() == null) {
+        if (ServerLifecycleHooks.getCurrentServer() == null) {
             return;
         }
 
         try {
-            HttpServer server = HttpServer.create(new InetSocketAddress("localhost",8001),0);
+            HttpServer server = HttpServer.create(new InetSocketAddress("localhost", 8001), 0);
             server.createContext("/test/", this);
             server.start();
         } catch (IOException e) {
@@ -36,13 +38,11 @@ public class Server implements HttpHandler {
     public void handle(HttpExchange httpExchange) throws IOException {
         final MinecraftServer is = ServerLifecycleHooks.getCurrentServer();
 
-        if (is==null) {
+        if (is == null) {
             return;
         }
-
-        final Gson gson = new Gson();
         final List<String> playersList = new ArrayList<>();
-        for (ServerPlayerEntity player: is.getPlayerList().getPlayers()) {
+        for (ServerPlayerEntity player : is.getPlayerList().getPlayers()) {
             playersList.add(player.getName().getString());
         }
         final byte[] answer = gson.toJson(playersList).getBytes(UTF_8);
