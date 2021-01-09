@@ -19,7 +19,6 @@ public class PlayersOnline {
 
     public PlayersOnline() {
         ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, Config.server_config);
-//        Config.loadConfig(Config.server_config, FMLPaths.CONFIGDIR.get().resolve("playersonline-server.toml").toString());
 
         MinecraftForge.EVENT_BUS.register(this);
     }
