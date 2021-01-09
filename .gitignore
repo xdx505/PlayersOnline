@@ -23,6 +23,7 @@ gradlew
 eclipse
 run
 *\logs
+*.log
 
 # Files from Forge MDK
 forge*changelog.txt
