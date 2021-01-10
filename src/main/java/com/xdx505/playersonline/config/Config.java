@@ -8,12 +8,12 @@ import net.minecraftforge.common.ForgeConfigSpec;
 import java.io.File;
 
 public class Config {
-    private static final ForgeConfigSpec.Builder server_builder = new ForgeConfigSpec.Builder();
+    private static final ForgeConfigSpec.Builder serverBuilder = new ForgeConfigSpec.Builder();
     public static final ForgeConfigSpec serverConfig;
 
     static {
-        WebServerConfig.init(server_builder);
-        serverConfig = server_builder.build();
+        WebServerConfig.init(serverBuilder);
+        serverConfig = serverBuilder.build();
     }
 
     public static void loadConfig(ForgeConfigSpec config, String path) {
