@@ -20,7 +20,7 @@ import java.util.List;
 import static java.nio.charset.StandardCharsets.UTF_8;
 
 public class Server implements HttpHandler {
-    private final Gson gson = new Gson();
+    private static final Gson gson = new Gson();
 
     public void init() {
         if (ServerLifecycleHooks.getCurrentServer() == null) {
