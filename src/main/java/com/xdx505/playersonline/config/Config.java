@@ -9,11 +9,11 @@ import java.io.File;
 
 public class Config {
     private static final ForgeConfigSpec.Builder server_builder = new ForgeConfigSpec.Builder();
-    public static final ForgeConfigSpec server_config;
+    public static final ForgeConfigSpec serverConfig;
 
     static {
         WebServerConfig.init(server_builder);
-        server_config = server_builder.build();
+        serverConfig = server_builder.build();
     }
 
     public static void loadConfig(ForgeConfigSpec config, String path) {

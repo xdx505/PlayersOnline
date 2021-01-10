@@ -14,6 +14,7 @@ import java.io.IOException;
 import java.io.OutputStream;
 import java.net.InetSocketAddress;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 import static java.nio.charset.StandardCharsets.UTF_8;
@@ -47,7 +48,7 @@ public class Server implements HttpHandler {
             return;
         }
 
-        final List<ServerPlayerEntity> list = is.getPlayerList().getPlayers();
+        final List<ServerPlayerEntity> list = new ArrayList<>(is.getPlayerList().getPlayers());
         final List<String> playersList = new ArrayList<>();
         for (ServerPlayerEntity player : list) {
             playersList.add(player.getName().getString());
