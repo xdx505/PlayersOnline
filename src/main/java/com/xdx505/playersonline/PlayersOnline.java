@@ -15,7 +15,7 @@ import org.apache.logging.log4j.Logger;
 public class PlayersOnline {
 
     public static final Logger LOGGER = LogManager.getLogger();
-    private final Server server = new Server();
+    private static final Server server = new Server();
 
     public PlayersOnline() {
         ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, Config.serverConfig);
