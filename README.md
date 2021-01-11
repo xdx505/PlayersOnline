@@ -10,6 +10,7 @@
 **Minecraft version:** 1.6.3
 
 ---  
+At the first start, a config file will be generated. The web server default address: [127.0.0.5:8005/test/](http://127.0.0.5:8005/test/)  
 You can configurate your web server parametrs at:  `run/config/playersonline-common.toml`  
 ```toml
 #hostname
@@ -18,5 +19,4 @@ host = "127.0.0.5"
 port = 8005
 #path
 path = "/test/"
-```  
-Thw web server default address: [127.0.0.5:8005/test/](http://127.0.0.5:8005/test/)
+```
