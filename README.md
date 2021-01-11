@@ -7,9 +7,10 @@
 **Author:** xdx505  
 **Mod version:** 1.0  
 **Type:** Server mode  
-**Minecraft version:** 1.6.3  
+**Minecraft version:** 1.6.3
+
 ---  
-You can configurate your web server parametrs at  `run/config/playersonline-common.toml`:  
+You can configurate your web server parametrs at:  `run/config/playersonline-common.toml`  
 ```toml
 #hostname
 host = "127.0.0.5"
