@@ -1,6 +1,6 @@
 ![](src/main/resources/mod_icon.png)
 
-## **Players Online** mod for Minecraft 1.6.3  
+## Players Online mod for Minecraft 1.6.3
 
 ### This mod allows you to track players online on you web server.
 
